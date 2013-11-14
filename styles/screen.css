@@ -133,14 +133,14 @@ section {
 }
 
 section > div {
-	background:url(../images/dash.png) 100px 0 repeat-y;
+	background:url(../images/dash.png) 111px 0 repeat-y;
 }
 
 section h2 {
 	font:1.4em/1.42857142857143 'adelle', georgia, serif; /* 21/30 */
 	float:left;
-	width:175px;
-	text-align:right;
+	width:223px;
+	text-align:center;
 	color:#76b6cb;
 	white-space:nowrap;
 	background:#fff;
@@ -196,6 +196,10 @@ section h1 {
 	color:#53808e;
 }
 
+.intro span {
+	opacity:0.5
+}
+
 /*	Who section
 **	--------------------------------------------- */
 
@@ -205,7 +209,7 @@ section h1 {
 
 .speaker img {
 	float:left;
-	margin:0 40px 0 -140px;
+	margin:0 40px 0 -148px;
 	max-width:75px;
 }
 
@@ -480,7 +484,7 @@ footer fieldset input {
 	border:none;
 }
 
-#logos a[href*=ellislab] {
+/*#logos a[href*=ellislab] {
 	background-image:url(../images/logo-ellislab.png);
 	width:47px;
 }
@@ -500,7 +504,7 @@ footer fieldset input {
 	background-image:url(../images/logo-low.png);
 	width:70px;
 	height:40px;
-}
+}*/
 
 .small-print {
 	font-size:80%;
