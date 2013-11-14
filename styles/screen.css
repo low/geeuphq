@@ -551,6 +551,10 @@ footer fieldset input {
 		padding:0;
 	}
 
+	.intro br {
+		display:none;
+	}
+
 	section h1,
 	.intro p {
 		font-size:1.6em; /* 24 */
