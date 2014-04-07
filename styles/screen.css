@@ -175,10 +175,6 @@ section ul li {
 	margin-bottom:0.73333333333333em;
 }
 
-section b {
-	color:#53808e;
-}
-
 section > div > :last-child {
 	margin-bottom:0;
 }
@@ -187,14 +183,14 @@ section > div > :last-child {
 **	--------------------------------------------- */
 
 section h1,
-.intro p {
+.intro p:first-child {
 	font:1.86666666666667em/1.42857142857143 'adelle', georgia, serif; /* 28/40 */
 	color:#53808e;
 	margin-bottom:0.71428571428571em; /* 20 */
 }
 
 section h1 em,
-.intro p em {
+.intro p:first-child em {
 	font-style:normal;
 	color:#76b6cb;
 }
@@ -484,7 +480,7 @@ footer .small-print {
 	}
 
 	section h1,
-	.intro p {
+	.intro p:first-child {
 		font-size:1.6em; /* 24 */
 		line-height:1.5; /* 36 */
 		margin-bottom:0.75; /* 18 */
