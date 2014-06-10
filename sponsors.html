@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta name="description" content="GeeUp 2014 Sponsors" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" />
+
+	<!-- Page title -->
+	<title>GeeUp 2014 Sponsors</title>
+
+	<!-- html5, Typekit -->
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<script src="//use.typekit.net/hua8nly.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="styles/screen.css" media="screen" />
+</head>
+<body>
+	<header class="sponsors">
+		<div>
+			<h1><a href="/">GeeUp</a></h1>
+			<p>Sponsored by</p>
+		</div>
+	</header>
+	<section>
+		<div>
+			<ul id="slideshow">
+				<li class="gold"><img src="images/sponsors/focuslab.png" alt="Focus Lab"></li>
+				<li class="gold"><img src="images/sponsors/craft.png" alt="Craft"></li>
+				<li class="silver"><img src="images/sponsors/arcustech.png" alt="ArcusTech"></li>
+				<li class="bronze"><img src="images/sponsors/solspace.png" alt="Solspace"></li>
+				<li class="bronze"><img src="images/sponsors/expresso-store.png" alt="Expresso Store"></li>
+				<li class="bronze"><img src="images/sponsors/electricputty.png" alt="Electric Putty"></li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<div>
+		</div>
+	</footer>
+
+	<script>
+		(function(){
+			var show   = 0,
+				times  = {gold: 15, silver: 10, bronze: 5},
+				slides = document.getElementById('slideshow').getElementsByTagName('li');
+
+			var change = function() {
+				var time;
+
+				for (var i in slides) {
+					var slide = slides[i];
+					if ( ! slide.style) continue;
+					slide.style.display = (i == show) ? 'block' : 'none';
+					if (i == show) time = times[slide.className];
+				}
+
+				show++;
+				if (show == slides.length) show = 0;
+
+				window.setTimeout(change, 1000 * time);
+			}
+
+			change();
+
+		})();
+	</script>
+</body>
+</html>
