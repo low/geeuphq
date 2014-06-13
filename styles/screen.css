@@ -423,13 +423,24 @@ blockquote + p {
 /*	Slideshow
 **	--------------------------------------------- */
 
-#slideshow li {
+#slideshow section > div {
+	padding:30px 0;
+	max-width:791px;
+	background:none;
+	text-align:center;
+}
+
+#slideshow ul li {
 	padding:0;
 	background:none;
 }
 
-#slideshow li:before {
+#slideshow ul li:before {
 	content:none;
+}
+
+#slideshow ul img {
+	max-width:100%
 }
 
 /*	Footer
