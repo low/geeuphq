@@ -29,7 +29,7 @@ footer > div {
 }
 
 /* Default margin bottom */
-p, ul, ol, dl, table, blockquote, pre {
+p, ul, ol, dl, table, blockquote, pre, form {
 	margin-bottom:1.46666666666667em; /* 22 */
 }
 
@@ -323,6 +323,26 @@ img.full {
 
 .icons .email {
 	background-image:url(../images/icon-mail.png);
+}
+
+/*	Subscribe form
+**	--------------------------------------------- */
+
+input[name="EMAIL"] {
+	font:1em/2 'proxima-nova', 'helvetica neue', arial, sans-serif;
+	border:none;
+	border-bottom:1px dashed #ccc;
+	background:transparent;
+	vertical-align:bottom;
+	padding:0 .5em;
+	margin:0 -0.3em 0 0;
+	outline:none;
+	display:inline-block;
+}
+
+input[name="EMAIL"]:active,
+input[name="EMAIL"]:focus {
+	border-bottom:1px solid #93c158;
 }
 
 /*	Call To Action
